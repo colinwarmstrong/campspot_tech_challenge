@@ -4,7 +4,7 @@ require_relative '../lib/reservation.rb'
 
 class ReservationTest < Minitest::Test
   def test_reservation_exists_and_has_correct_attributes
-    reservation_info = {"campsiteId": 1, "startDate": "2018-06-01", "endDate": "2018-06-03"}
+    reservation_info = { campsiteId: 1, startDate: '2018-06-01', endDate: '2018-06-03' }
 
     reservation = Reservation.new(reservation_info)
 

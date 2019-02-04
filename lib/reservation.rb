@@ -5,6 +5,6 @@ class Reservation
 
   def initialize(reservation_info)
     @start_date = Date.parse(reservation_info[:startDate])
-    @end_date = Date.parse(reservation_info[:endDate])
+    @end_date   = Date.parse(reservation_info[:endDate])
   end
 end
