@@ -12,13 +12,8 @@ You will need access to a terminal application and have Ruby setup on your machi
 
 This program is written using Ruby version 2.5.3.  If you need to get Ruby set up on your machine, follow the instructions [here](https://www.ruby-lang.org/en/documentation/installation/).
 
-Once you have Ruby installed, run the following command from your terminal to install Bundler, a Ruby dependency manager:
 
-```
-$ gem install bundler
-```
-
-After installing Bundler, clone this repository to your local machine:
+Once you have Ruby up and runnning on your machine, clone this repository:
 
 ```
 $ git clone https://github.com/colinwarmstrong/campspot_tech_challenge.git
@@ -28,6 +23,12 @@ Next, change into the directory:
 
 ```
 $ cd campspot_tech_challenge
+```
+
+Once you are in the directory, run the following command from your terminal to install Bundler, a Ruby dependency manager (unless you already have Bundler installed):
+
+```
+$ gem install bundler
 ```
 
 Now install the necessary gems using Bundler:
