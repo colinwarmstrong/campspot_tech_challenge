@@ -19,7 +19,7 @@ class CampsiteTest < Minitest::Test
 
     assert_equal [], campsite.reservations
 
-    reservation_info = {campsiteId: 1, startDate: '2018-06-01', endDate: '2018-06-03'}
+    reservation_info = { campsiteId: 1, startDate: '2018-06-01', endDate: '2018-06-03' }
     campsite.add_reservation(reservation_info)
 
     assert_equal 1, campsite.reservations.length
