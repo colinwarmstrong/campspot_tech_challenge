@@ -58,7 +58,7 @@ This will run all the tests and print out the results to the terminal.
 
 ## Approach to Solving the Problem
 
-My overall approach to this problem involved using object-oriented principles to break the problem down into a few classes the I felt best modeled the reservation system outlined in the spec.  The overarching class was the reservation system itself which handled bringing in and processing the JSON data.  The reservation system then created individual campsite objects and these campsite objects created reservation objects.  Together, I felt these three classes were able to model the overall system pretty well.
+My overall approach to this problem involved using object-oriented principles to break the problem down into a few classes that I felt best modeled the reservation system outlined in the spec.  The overarching class was the reservation system itself which handled bringing in and processing the JSON data.  The reservation system then created individual campsite objects and these campsite objects created reservation objects.  Together, I felt these three classes were able to model the overall system pretty well.
 
 After I had these three classes outlined, I was able to use test-driven development to build out the overall behavior of the program.  I started with being able to bring in and model the data defined within the JSON payload and then worked my way into using that information to determine which campsites were available for reservation.
 
