@@ -1,4 +1,4 @@
-require 'json'
+require 'date'
 require_relative 'test_helper.rb'
 require_relative '../lib/reservation.rb'
 
@@ -9,7 +9,7 @@ class ReservationTest < Minitest::Test
     reservation = Reservation.new(reservation_info)
 
     assert_instance_of Reservation, reservation
-    assert_equal reservation_info[:startDate], reservation.start_date
-    assert_equal reservation_info[:endDate], reservation.end_date
+    assert_equal Date.parse(reservation_info[:startDate]), reservation.start_date
+    assert_equal Date.parse(reservation_info[:endDate]), reservation.end_date
   end
 end
