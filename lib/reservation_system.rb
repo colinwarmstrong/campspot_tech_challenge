@@ -8,6 +8,7 @@ class ReservationSystem
   def initialize(json_file_path)
     @data = parse_json(json_file_path)
     @campsites = create_campsites
+    seed_reservations
   end
 
   private
@@ -25,6 +26,13 @@ class ReservationSystem
       id = campsite_info[:id]
       campsites[id] = Campsite.new(campsite_info)
       campsites
+    end
+  end
+
+  def seed_reservations
+    data[:reservations].each do |reservation_info|
+      campsite_id = reservation_info[:campsiteId]
+      campsites[campsite_id].add_reservation(reservation_info)
     end
   end
 end
